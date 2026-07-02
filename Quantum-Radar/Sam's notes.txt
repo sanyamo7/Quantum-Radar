@@ -1,0 +1,441 @@
+Phase 0 — Project Setup ✅ (Completed)
+Objective
+
+Prepare the development environment.
+
+Tasks
+Install Python
+Install VS Code
+Install QuTiP
+Install NumPy
+Install SciPy
+Install Matplotlib
+Create project structure
+Configure packages
+Setup testing
+
+Status: ✅ Completed
+
+Phase 1 — Quantum Foundations ✅ (Completed)
+Objective
+
+Build all basic quantum mechanics modules from scratch.
+
+Modules
+Quantum States
+|0⟩
+|1⟩
+Normalization
+State vectors
+Quantum Gates
+Identity
+Pauli-X
+Pauli-Y
+Pauli-Z
+Hadamard
+CNOT
+Entanglement
+Bell State
+Tensor Product
+Bell Pair Generator
+Density Matrix
+Pure States
+Mixed States
+Density Matrix Conversion
+Photon Pair
+Signal Photon
+Idler Photon
+Quantum Memory
+Store Idler
+Retrieve Idler
+
+Status: ✅ Completed
+
+Phase 2 — Quantum Channel (Current Phase)
+Objective
+
+Model realistic propagation of the signal photon.
+
+Modules
+Loss Channel
+Amplitude Damping
+Kraus Operators
+Superoperator
+
+Status: ✅ Completed
+
+Thermal Noise
+Thermal Density Matrix
+Average Photon Number
+Beam Splitter
+
+Implements
+
+a
+R
+	​
+
+=
+κ
+	​
+
+a
+S
+	​
+
++
+1−κ
+	​
+
+a
+B
+	​
+
+Free Space Channel
+Distance
+Attenuation
+Transmission Efficiency
+Decoherence
+Phase Damping
+Depolarization
+
+Status: 🔄 In Progress
+
+Phase 3 — Target Modeling
+Objective
+
+Model the object being detected.
+
+Modules
+Target
+
+Parameters
+
+Distance
+Reflectivity κ
+Velocity (optional)
+Radar Cross Section (RCS)
+Reflection Model
+
+Implements
+
+ρ
+out
+	​
+
+=f(ρ
+signal
+	​
+
+,ρ
+noise
+	​
+
+,κ)
+Target Present
+Target Absent
+
+Phase 4 — Receiver
+Objective
+
+Model the quantum receiver.
+
+Modules
+
+Quantum Receiver
+
+Joint Measurement
+
+Bell Measurement
+
+POVM Measurement
+
+Coincidence Detection
+
+Decision Logic
+
+Phase 5 — Detection Theory
+Objective
+
+Determine whether a target exists.
+
+Metrics
+
+Detection Probability
+
+False Alarm Probability
+
+Miss Probability
+
+Error Probability
+
+Likelihood Ratio Test
+
+Threshold Detection
+
+
+Phase 6 — Classical Radar
+Objective
+
+Build a baseline radar.
+
+Modules
+
+Classical Transmitter
+
+Classical Channel
+
+Classical Receiver
+
+Noise Model
+
+Energy Detection
+
+Matched Filter
+
+Phase 7 — Quantum Illumination
+Objective
+
+Complete the entire quantum radar pipeline.
+
+Flow
+
+Bell Pair
+
+↓
+
+Signal + Idler
+
+↓
+
+Signal → Channel
+
+↓
+
+Target
+
+↓
+
+Reflection
+
+↓
+
+Receiver + Idler
+
+↓
+
+Joint Measurement
+
+↓
+
+Decision
+Phase 8 — Monte Carlo Simulation
+Objective
+
+Run thousands of experiments.
+
+Modules
+
+Experiment Runner
+
+Random Target Generator
+
+Random Noise Generator
+
+Parameter Sweep
+
+Statistics
+
+Phase 9 — Performance Evaluation
+
+Metrics
+
+ROC Curve
+
+Detection Probability
+
+False Alarm Probability
+
+Bit Error Rate
+
+Receiver Operating Characteristic
+
+SNR
+
+Quantum Advantage
+
+Phase 10 — Visualization
+
+Graphs
+
+Detection Probability
+
+ROC Curve
+
+Noise vs Accuracy
+
+Reflectivity vs Accuracy
+
+Distance vs Accuracy
+
+Monte Carlo Histograms
+
+Density Matrix Visualization
+
+Bloch Sphere
+
+Phase 11 — Thesis Outputs
+
+Automatically Generate
+
+CSV
+
+Excel
+
+Figures
+
+PDF Plots
+
+Experiment Logs
+
+Performance Tables
+
+Phase 12 — GUI (Optional but Highly Recommended)
+
+Desktop Application
+
+Experiment Controls
+
+Live Simulation
+
+Parameter Sliders
+
+Graphs
+
+Save Results
+
+Load Results
+
+Export Report
+
+Phase 13 — Documentation
+
+README
+
+Installation Guide
+
+Theory Guide
+
+Developer Guide
+
+API Documentation
+
+Experiment Manual
+
+Final Project Structure
+Quantum-Radar/
+│
+├── docs/
+│   ├── equations/
+│   ├── papers/
+│   ├── thesis_notes/
+│   └── images/
+│
+├── results/
+│   ├── csv/
+│   ├── plots/
+│   ├── logs/
+│   └── reports/
+│
+├── tests/
+│   ├── quantum/
+│   ├── channel/
+│   ├── receiver/
+│   ├── radar/
+│   └── simulation/
+│
+├── src/
+│   ├── quantum/
+│   │   ├── source.py
+│   │   ├── photon_pair.py
+│   │   ├── quantum_memory.py
+│   │   ├── density.py
+│   │   ├── states.py
+│   │   ├── gates.py
+│   │   ├── bell.py
+│   │   ├── measurement.py
+│   │   └── kraus.py
+│   │
+│   ├── channel/
+│   │   ├── loss_channel.py
+│   │   ├── thermal_noise.py
+│   │   ├── beam_splitter.py
+│   │   ├── free_space.py
+│   │   └── decoherence.py
+│   │
+│   ├── radar/
+│   │   ├── transmitter.py
+│   │   ├── receiver.py
+│   │   ├── target.py
+│   │   ├── detector.py
+│   │   └── radar.py
+│   │
+│   ├── simulation/
+│   │   ├── experiment.py
+│   │   ├── monte_carlo.py
+│   │   └── parameters.py
+│   │
+│   ├── analysis/
+│   │   ├── statistics.py
+│   │   ├── roc.py
+│   │   ├── comparison.py
+│   │   └── metrics.py
+│   │
+│   ├── visualization/
+│   │   ├── plots.py
+│   │   ├── dashboard.py
+│   │   └── animation.py
+│   │
+│   └── utils/
+│       ├── logger.py
+│       ├── config.py
+│       └── helpers.py
+│
+├── legacy/
+│
+├── main.py
+├── requirements.txt
+├── README.md
+└── LICENSE
+Research Papers We'll Follow
+
+Our implementation will primarily follow:
+
+Seth Lloyd (2008) — Enhanced Sensitivity of Photodetection via Quantum Illumination
+Tan et al. (2008) — Quantum Illumination with Gaussian States
+The survey/review paper you shared (arXiv:2205.14000)
+Additional foundational papers on quantum illumination and quantum sensing if needed to justify implementation choices.
+End Goal
+
+By the end of the project, you should be able to:
+
+Build a complete quantum illumination radar simulator.
+Compare quantum and classical radar under identical conditions.
+Generate publication-quality figures and experiment data.
+Explain the mathematics behind every module.
+Use the simulator as the implementation and experimental validation chapter of your Master's thesis.
+One Important Improvement
+
+There's one thing I'd like to add that will make your thesis significantly stronger:
+
+Phase 14 — Validation and Reproducibility
+
+Before claiming any "quantum advantage," we'll validate our simulator by:
+
+Comparing intermediate results with known analytical results from the literature.
+Verifying that density matrices remain physical (Hermitian, trace = 1, positive semidefinite).
+Checking that quantum channels satisfy completeness conditions.
+Using fixed random seeds for reproducible Monte Carlo experiments.
+Writing unit tests for every major physics module.
+
+This phase will greatly improve the scientific credibility of your work and make it much easier to defend during your thesis presentation.
